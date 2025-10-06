@@ -9,13 +9,13 @@
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-// turns on LED with B button
+// turns on LED with A button
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Yes)
     pins.digitalWritePin(DigitalPin.P16, 1)
 })
 
-// turns of LED with A button
+// turns off LED with B button
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.No)
     pins.digitalWritePin(DigitalPin.P16, 0)
